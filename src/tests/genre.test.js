@@ -17,7 +17,7 @@ test("POST/genres", async () => {
   expect(res.body.id).toBeDefined();
   expect(res.body.name).toBe(genre.name);
 });
-test("PUT/genres", async () => {
+test("PUT/genres/:id", async () => {
   const genre = {
     name: "COMEDIA",
   };

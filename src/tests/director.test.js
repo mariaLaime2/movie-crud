@@ -21,7 +21,7 @@ test('GET/directors', async () => {
     expect(res.body.id).toBeDefined()
     expect(res.body.firstName).toBe(director.firstName)
 })
-test('PUT/directors', async () => { 
+test('PUT/directors/:id', async () => { 
     const director={
         firstName:"Michael Actualizado"
     }

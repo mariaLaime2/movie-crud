@@ -24,7 +24,7 @@ test("POST/movies", async () => {
   expect(res.body.id).toBeDefined();
   expect(res.body.name).toBe(movie.name);
 });
-test("PUT/movies", async () => {
+test("PUT/movies/:id", async () => {
   const movie = {
     name: "El conjuro 1",
   };

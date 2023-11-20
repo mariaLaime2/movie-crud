@@ -21,7 +21,7 @@ test("POST/actors", async () => {
   expect(res.body.id).toBeDefined();
   expect(res.body.firstName).toBe(actor.firstName);
 });
-test("PUT/actors", async () => {
+test("PUT/actors/:id", async () => {
   const actor = {
     firstName: "Lauren Actualizada",
   };
